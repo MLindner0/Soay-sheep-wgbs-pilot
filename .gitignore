@@ -2,3 +2,10 @@
 .vscode/
 notes/
 **/*-todo.md
+data_storage_plan/
+meth/
+meth_downstream/
+phenotypic_data/
+pipeline_stats/
+plots/
+QC/
