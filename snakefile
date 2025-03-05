@@ -121,7 +121,7 @@ rule dedup:
     shell:
         "(deduplicate_bismark -p --output_dir /mnt/parscratch/users/bi1ml/public/methylated_soay/soay_wgbs_pilot_mar2023/alignment/ -o {wildcards.run} {input}) 2> {log}"
 
-# convert alignments back to .bam format
+# sort alignments by coordinates
 rule samsort2:
     input:
         "/mnt/parscratch/users/bi1ml/public/methylated_soay/soay_wgbs_pilot_mar2023/alignment/{run}.deduplicated.bam"
