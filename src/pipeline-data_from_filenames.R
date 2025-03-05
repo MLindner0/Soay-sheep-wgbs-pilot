@@ -1,10 +1,12 @@
 
-### Get files based on data file names:
-# (1) .txt file to rename links to data files (replace lane identifiers by 1-3 for consistency across samples)
-# NOTE: never rename the raw data files, instead create symbolic links and rename the links
-# (2) .csv file for python dictionary
-### for
-
+### R script: Get information on files and file names needed to prepare and run the snakemake pipeline:
+###
+### (1) get a .txt file to rename symlinks to data files (replace lane identifiers by 1-3 for consistency between samples)
+### NOTE: I use symlinks here to retain the original file names of read data. Instead I create symbolic links (linking to the read data) and rename the links.
+###
+### (2) .csv file with read group information to build python dictionary used in the merge rule
+###
+### Author: Melanie Lindner
 
 ### -------------- load required packages & set path -----------------------------
 
